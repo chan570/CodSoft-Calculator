@@ -1,0 +1,129 @@
+*{
+    margin: 10px;
+    box-sizing: border-box;
+}
+#header h1{
+    font-size: 40px;
+    text-align: center;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background-image: url("calcback.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    z-index: 0;
+}
+body *{
+    position: relative;
+    z-index: 1;
+}
+.box{
+    background-color: black;
+    max-width: 450px;
+    height: 640px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+.mul{
+    text-align: center;
+    padding-top: 15px;
+}
+.display{
+    font-size: 65px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 30px;
+    color: white;
+    text-align: end;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    
+}
+.row {
+    display: flex;
+    justify-content: space-between; /* space between buttons */
+    gap: 10px; /* optional: space between buttons */
+    margin-bottom: -10px;
+    
+}
+.btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:rgba(57, 56, 56, 0.964);
+    color: white;
+    font-size: 35px;
+    border: none;
+    transition: background 0.5s, color 0.5s, transform 0.5s;
+}
+.btn:hover{
+    background-color:azure;
+    color: black;
+
+}
+.zero{
+    width: 205px;
+    border-radius: 40px;
+}
+.orange{
+    background-color: darkorange;
+}
+.grey{
+    background-color: grey;
+    color: black;
+}
+@media (max-width: 600px) {
+    .box {
+        width: 90vw;
+        height: auto;
+        margin-top: 30px;
+        padding: 20px 10px;
+    }
+
+    .display {
+        font-size: 40px;
+        height: 80px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .btn {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .zero {
+        width: 145px;
+    }
+
+    #header h1 {
+        font-size: 28px;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background-position: center;
+        background-image: url("phone.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat
+    }
+}
