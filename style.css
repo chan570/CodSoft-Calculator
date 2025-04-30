@@ -120,7 +120,6 @@ body *{
     body {
         padding: 0;
         margin: 0;
-        overflow: hidden;
         background-position: center;
         background-image: url("phone.jpg");
     background-size: contain;
