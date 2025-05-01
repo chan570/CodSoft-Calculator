@@ -95,7 +95,25 @@ body *{
 .grey{
     background-color: grey;
     color: black;
-}@media (max-width: 600px) {
+}
+
+
+#copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 300;
+    margin-top: 12px;
+    
+  }
+  #copyright p{
+    padding: 0px;
+    color: black;
+  }
+  #copyright i{
+    color: #D44638;
+  }
+@media (max-width: 600px) {
     #header h1 {
         font-size: 28px;
     }
